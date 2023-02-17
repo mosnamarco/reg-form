@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <form>
+            <span id="elegible_warn" style="font-weight: bold; color: rgb(71, 255, 71)"></span>
+            <div id="name-email">
+                <label for="first_name">First Name</label>
+                <input id="first_name" type="text" placeholder="First Name">
+    
+                <label for="last_name">Last Name</label>
+                <input id="last_name" type="text" placeholder="Last Name">
+    
+                <label for="last_name">Nick Name</label>
+                <input id="nick_name" type="text" placeholder="Last Name">
+    
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="your@email.com">
+            </div>
+            <div id="password-confirm">
+                <div class="password_container">
+                    <label for="password">Password</label>
+                    <input id="password" type="password" placeholder="Password">
+                    <span id="password_warn" style="color: rgb(255, 0, 0); font-weight: bold;"></span>
+                </div>
+                <div class="confirm_container">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input id="confirm_password" type="password" placeholder="Confirm Password">
+                    <span id="confirm_warn" style="color: rgb(255, 0, 0); font-weight: bold;"></span>
+                </div>
+            </div>
+            <div id="date_of_birth">
+                <label for="birthday">Date Of Birth</label>
+                <input type="date" id="birthday">
+                <span id="dob_warn" style="color: rgb(255, 0, 0); font-weight: bold;"></span>
+            </div>
+    
+            <label for="gender">Gender</label>
+            <div id="gender">
+                <div>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" id="female"name="gender">
+                    <label for="female">Female</label>
+                </div>
+                <div>
+                    <input type="radio" id="other"name="gender">
+                    <label for="others">Other</label>
+                </div>
+            </div>
+            <div id="tel-address">
+                <label for="tel">Mobile</label>
+                <input type="tel" id="tel" placeholder="09123123123">
+                <label for="address">Address</label>
+                <textarea name="address" id="address" cols="30" rows="10"></textarea>
+            </div>
+            <div id="submit_group">
+                <input type="button" onclick="verify_password()" value="Submit">
+                <input type="reset" onclick="reset_form()" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
